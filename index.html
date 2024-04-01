@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <main>
+  <div class="mainCal" id="mainCal">
+    <div class="cirles">
+      <div id="circleOne" onclick="lightTheme()"></div>
+      <div id="circleTwo" onclick="darkTheme()"></div>
+    </div>
+      <div id="display"></div>
+    <table>
+      <tr>
+        <td><button id="clear" onclick="clearAll()">C</button></td>
+        <td><button id="operator" onclick="handleGetValue('/')">/</button></td>
+        <td><button id="operator" onclick="handleGetValue('*')">×</button></td>
+        <td><button id="operator" onclick="clearOne()">&lt;</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="handleGetValue('7')">7</button></td>
+        <td><button onclick="handleGetValue('8')">8</button></td>
+        <td><button onclick="handleGetValue('9')">9</button></td>
+        <td><button id="operator" onclick="handleGetValue('-')">-</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="handleGetValue('4')">4</button></td>
+        <td><button onclick="handleGetValue('5')">5</button></td>
+        <td><button onclick="handleGetValue('6')">6</button></td>
+        <td><button id="operator" onclick="handleGetValue('+')">+</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="handleGetValue('1')">1</button></td>
+        <td><button onclick="handleGetValue('2')">2</button></td>
+        <td><button onclick="handleGetValue('3')">3</button></td>
+        <td rowspan="2"><button id="equal" onclick="handleCalculate()">=</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="handleGetValue('0')">0</button></td>
+        <td><button onclick="handleGetValue('00')">00</button></td>
+        <td><button id="operator" onclick="handleGetValue('.')">.</button></td>
+      </tr>
+    </table>
+  </div>
+</main>
+<script src="js/script.js"></script>
+</body>
+</html>

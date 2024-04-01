@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+body {
+  background: #081923;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mainCal {
+  background: rgb(255, 255, 255);
+  height: 570px;
+  width: 330px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #8a817c;
+}
+#display {
+  font-size: 30px;
+  overflow-x: scroll;
+  height: 120px;
+  max-width: 300px;
+  margin: 10px auto;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+#display::-webkit-scrollbar {
+  display: block;
+  height: 3px;
+}
+
+table {
+  width: 300px;
+  margin: 0 auto;
+}
+button {
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 60px;
+  font-size: 20px;
+  margin: 5px;
+  transition: all 0.2s;
+  background-color: #39848f;
+}
+button:hover {
+  scale: 1.1;
+}
+#equal {
+  height: 120px;
+  background-color: green;
+}
+#clear {
+  background-color: red;
+}
+#operator {
+  background-color: #a5cbb2;
+}
+.cirles {
+  padding: 8px 16px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#circleOne {
+  padding: 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+}
+#circleTwo {
+  padding: 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgb(0, 0, 0);
+}
